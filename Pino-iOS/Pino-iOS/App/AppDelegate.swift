@@ -114,8 +114,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 		let userInfo = response.notification.request.content.userInfo
 
 		// Print full message.
-		print(userInfo)
-		PushNotificationManager.shared.pushNotifTapped()
+		PushNotificationManager.shared.pushNotifTapped(notificationUserInfo: userInfo)
 	}
 
 	func application(
